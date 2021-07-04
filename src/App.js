@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from 'react';
-import { Acordion } from 'react-faq-acordion';
+import { Accordion } from 'react-faq-acordion';
 import styled from '@emotion/styled';
 
 const ButtonsContainer = styled.div`
@@ -23,6 +23,10 @@ const ButtonDark = styled(Button)`
 `;
 const ButtonGreen = styled(Button)`
   background-color: #004d33;
+  color: #fff;
+`;
+const ButtonNetflix = styled(Button)`
+  background-color: #303030;
   color: #fff;
 `;
 const ButtonBlue = styled(Button)`
@@ -77,6 +81,11 @@ function App() {
         onClick={handleThemeChange}
       />
       <ButtonGreen 
+        type="button" value="Netflix"
+        name="netflix"
+        onClick={handleThemeChange}
+      />
+      <ButtonGreen 
         type="button" value="Green"
         name="green"
         onClick={handleThemeChange}
@@ -92,7 +101,7 @@ function App() {
         onClick={handleThemeChange}
       />
       </ButtonsContainer>
-      <Acordion data={data} theme={theme} />
+      <Accordion data={data} theme={theme} />
     </div>
   );
 }
