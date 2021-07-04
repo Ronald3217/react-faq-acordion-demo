@@ -10,7 +10,7 @@
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-faq-acordion": "^0.1.250",
+    "react-faq-acordion": "^0.1.2541",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
