@@ -80,7 +80,7 @@ function App() {
         name="dark"
         onClick={handleThemeChange}
       />
-      <ButtonGreen 
+      <ButtonNetflix
         type="button" value="Netflix"
         name="netflix"
         onClick={handleThemeChange}
