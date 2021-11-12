@@ -85,7 +85,12 @@ function App() {
     },
   ];
   const [theme, setTheme] = useState('green');
-  const [customTheme, setCustomTheme] = useState({});
+  const [customTheme, setCustomTheme] = useState({
+    backgroundHeader: '#ffaf00',
+    background: `#ffe4a9`,
+    color: `#000`,
+    borderBottom: `.5px solid #fff`,
+  });
   const [data, setData] = useState(initialData);
 
   const handleThemeChange = (e) => {
@@ -164,6 +169,7 @@ function App() {
             name="backgroundHeader"
             placeholder="color hexadecimal, rgb o rgba ex: #ffaf00"
             onChange={handleCustomThemeChange}
+            value={customTheme.backgroundHeader}
           />
         </InputContainer>
         <InputContainer>
@@ -172,6 +178,7 @@ function App() {
             name="background"
             placeholder="color hexadecimal, rgb o rgba ex: #ffe4a9"
             onChange={handleCustomThemeChange}
+            value={customTheme.background}
           />
         </InputContainer>
         <InputContainer>
@@ -180,6 +187,7 @@ function App() {
             name="color"
             placeholder="color hexadecimal, rgb o rgba ex: #000"
             onChange={handleCustomThemeChange}
+            value={customTheme.color}
           />
         </InputContainer>
         <InputContainer>
@@ -188,6 +196,7 @@ function App() {
             name="borderBottom"
             placeholder=".5px solid #fff"
             onChange={handleCustomThemeChange}
+            value={customTheme.borderBottom}
           />
         </InputContainer>
       </ButtonsContainer>
